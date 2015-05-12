@@ -1,11 +1,11 @@
 clear
 clc
 %parameters
-SZ=10;
+SZ=100;
 TB=40;
 
 samples=40;
-A=sqrt(0.1);
+A=sqrt(1);
 W1=W(TB,1);
 W2=W(TB,0);
 
@@ -20,7 +20,7 @@ subplot(4,1,1);
 plot(t,S);
 
 %%Noise
-S=awgn(S,-4);
+S=awgn(S,0);
 subplot(4,1,2);
 plot(t,S);
 
